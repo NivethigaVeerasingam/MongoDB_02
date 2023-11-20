@@ -5,6 +5,8 @@
     
 **2. Create a collection called customerdetails.**
 
+customers> db.createCollection(“customersdetails”) { ok: 1 } customers>
+
 4. Insert all documents into the collection named   customerdetails.
 5. Retrieve all documents from the collection and sort the results by the “age” field    in ascending order.
 6. Count the number of females. 
