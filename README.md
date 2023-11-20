@@ -44,6 +44,7 @@ customers> db.customerdetails.countDocuments({“gender”:”Female”})
     customers> db.customerdetails.find({ “age”: {$lt:(“25”)},”gender”:”Male” }) [ { _id: ObjectId(“654cb000f41d0bb8c74d2fba”), name: ‘Sajee’, age: ‘24’, gender: ‘Male’, city: ‘Toronto’ } ]
     
 **12.Update Francis age to 35, if Francis is not available upsert.**
+
     customers> db.customerdetails.update({“name”:”Francis”},{ $set: {“age”:”35”}},{ upsert: true }) DeprecationWarning: Collection.update() is deprecated. Use updateOne, updateMany, or bulkWrite. { acknowledged: true, insertedId: ObjectId(“654ceed0937b2d69715cfcba”), matchedCount: 0, modifiedCount: 0, upsertedCount: 1 }
 
     
