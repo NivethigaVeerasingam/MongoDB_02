@@ -1,8 +1,10 @@
 # MongoDB_02
 **1. Create a Database called customers.**
+
     Movies> use customers switched to db customers customers>
     
 **2. Create a collection called customerdetails.**
+
 4. Insert all documents into the collection named   customerdetails.
 5. Retrieve all documents from the collection and sort the results by the “age” field    in ascending order.
 6. Count the number of females. 
